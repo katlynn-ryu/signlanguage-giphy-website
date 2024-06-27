@@ -1,0 +1,153 @@
+.gif-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.gif-detail-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120%; /* Adjusted width for a larger GIF */
+  max-width: 1200px; /* Increased max-width */
+  margin: 20px 0;
+}
+
+.gif-image {
+  flex: 3; /* Increased flex to make the GIF larger */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif-image img {
+  width: 100%;
+  height: auto;
+  max-width: 500px; /* Increased max-width */
+  max-height: 500px; /* Increased max-height */
+}
+
+.gif-actions {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gif-actions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #2887ec;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gif-actions button:hover {
+  background-color: #4da3ff;
+}
+
+.gif-tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: -540px;
+}
+
+.gif-tag {
+  padding: 5px 10px;
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.related-gifs {
+  margin-top: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.related-gif-item {
+  cursor: pointer;
+}
+
+/* Additional CSS for Load More and navigation buttons */
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.triangle-button {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.triangle-button-left {
+  border-width: 20px 30px 20px 0;
+  border-color: transparent #2887ec transparent transparent;
+  left: -40px; /* Adjust position as needed */
+}
+
+.triangle-button-left:hover {
+  border-color: transparent #4da3ff transparent transparent;
+}
+
+.triangle-button-left.disabled {
+  border-color: transparent #ccc transparent transparent;
+  cursor: not-allowed;
+}
+
+.triangle-button-right {
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #2887ec;
+  right: -40px; /* Adjust position as needed */
+}
+
+.triangle-button-right:hover {
+  border-color: transparent transparent transparent #4da3ff;
+}
+
+.load-more-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #2887ec;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.load-more-button:hover {
+  background-color: #4da3ff;
+}
+
+.additional-gifs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.additional-gif-item {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
