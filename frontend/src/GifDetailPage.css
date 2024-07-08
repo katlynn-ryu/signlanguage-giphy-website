@@ -1,0 +1,152 @@
+.gif-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.gif-detail-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+}
+
+.gif-image {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif-image img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.gif-actions {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gif-actions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #2887ec;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gif-actions button:hover {
+  background-color: #4da3ff;
+}
+
+.gif-tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.gif-tag {
+  padding: 5px 10px;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gif-tag:hover {
+  background-color: #bfbfbf;
+}
+
+.related-gifs {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.related-gif-item {
+  cursor: pointer;
+}
+
+.triangle-button {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.triangle-button-left {
+  border-width: 20px 30px 20px 0;
+  border-color: transparent #2887ec transparent transparent;
+  left: -40px;
+}
+
+.triangle-button-left:hover {
+  border-color: transparent #4da3ff transparent transparent;
+}
+
+.triangle-button-left.disabled {
+  border-color: transparent #ccc transparent transparent;
+  cursor: not-allowed;
+}
+
+.triangle-button-right {
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #2887ec;
+  right: -40px;
+}
+
+.triangle-button-right:hover {
+  border-color: transparent transparent transparent #4da3ff;
+}
+
+.load-more-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #2887ec;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+  margin-right: -620px;
+}
+
+.load-more-button:hover {
+  background-color: #4da3ff;
+}
+
+.additional-gifs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  justify-items: center;
+}
+
+.additional-gif-item {
+  cursor: pointer;
+}
